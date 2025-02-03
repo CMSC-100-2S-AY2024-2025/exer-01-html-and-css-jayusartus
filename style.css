@@ -1,0 +1,25 @@
+#top {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#projects {
+    display: flex;
+
+}
+
+.project-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 20px 20px 20px;
+}
+
+.label {
+    text-align: center;
+}
+
+.description {
+    text-align: justify;
+
+}
