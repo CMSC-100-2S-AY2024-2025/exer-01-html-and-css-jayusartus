@@ -1,25 +1,141 @@
+@font-face {
+    font-family: Fira;
+    src: url(./fonts/FiraSans-Black.ttf);
+}
+
+@font-face {
+    font-family: PTSerif;
+    src: url(./fonts/PTSerif-Regular.ttf);
+}
+
+body {
+    margin:0px;
+    background-color: #FCF5C7;
+}
+
 #top {
     display: flex;
-    justify-content: space-evenly;
+    font-family: Fira;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6495ed;
+}
+
+#top p {
+    color: white;
+    padding: 20px, 14px;
+    font-size: 40px;
+    margin: 10px;
+    justify-self:flex-start;
+}
+#top a {
+    color: white;
+    text-decoration: none;
+    padding: 20px, 14px;
+    font-size: 32px;
+    width: 33%;
+    text-align: center;
+}
+
+#top a:hover {
+    background-color: #253D5B;
+    color: white;
 }
 
 #projects {
     display: flex;
+    justify-content: space-around;
 
 }
 
 .project-cont {
+    margin: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px 20px 20px 20px;
+    justify-content: center;
+    align-items: baseline;
+    width: 50%;
+
 }
 
-.label {
+
+.project-img {
+    border: 3px solid black;
+    margin: 20px 0px;
+    width: 600px;
+    height: auto;
+}
+
+.header {
     text-align: center;
+    font-family: Fira;
+    margin: 5px;
+}
+
+.project-cont .header {
+    font-size: 35px;
+    margin: 0px;
+}
+#skills-autobio .header {
+    font-size: 40px;
+}
+
+#skills-autobio {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+#skills, #autobio {
+    margin: 20px;
+    width: 50%;
+}
+
+.project-cont>.text-cont>.description, #skills>.description, #autobio>.description {
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    height: 300px;
+}
+
+#skills>.description>ul{
+    margin: 0px;
+}
+
+.contact .header {
+    font-size: 30px;
+    margin: 0px;
+    text-align: left;
 }
 
 .description {
     text-align: justify;
+    font-family: PTSerif;
+    font-size: 24px;
+}
 
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact>table{
+    margin: 5px 20px;
+}
+
+.contact a{
+    text-decoration: underline;
+    color: black;
+}
+
+#profile-pic {
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 200px;
+}
+
+#footer {
+    border-top: 3px solid black;
+    padding: 20px;
+    margin: 0px;
 }
