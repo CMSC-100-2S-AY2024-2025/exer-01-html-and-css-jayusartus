@@ -13,6 +13,11 @@ body {
     background-color: #FCF5C7;
 }
 
+body>.header {
+    font-size: 50px;
+    text-decoration: underline;
+}
+
 #top {
     display: flex;
     font-family: Fira;
@@ -45,19 +50,24 @@ body {
 #projects {
     display: flex;
     justify-content: space-around;
+    margin-top: 0px;
 
 }
 
 .project-cont {
-    margin: 20px;
+    margin:0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
-    width: 50%;
+    width: 45%;
 
 }
 
+.text-cont {
+    margin: 20px;
+
+}
 
 .project-img {
     border: 3px solid black;
@@ -87,8 +97,7 @@ body {
 }
 
 #skills, #autobio {
-    margin: 20px;
-    width: 50%;
+    width: 45%;
 }
 
 .project-cont>.text-cont>.description, #skills>.description, #autobio>.description {
@@ -103,7 +112,7 @@ body {
 }
 
 .contact .header {
-    font-size: 30px;
+    font-size: 40px;
     margin: 0px;
     text-align: left;
 }
@@ -114,16 +123,24 @@ body {
     font-size: 24px;
 }
 
+.contact .description {
+    text-align: justify;
+    font-family: PTSerif;
+    font-size: 26px;
+}
+
 .contact {
     display: flex;
     justify-content: center;
+    margin: 10px;
+    align-items:start;
 }
 
 .contact>table{
     margin: 5px 20px;
 }
 
-.contact a{
+.contact a, #footer a{
     text-decoration: underline;
     color: black;
 }
@@ -131,11 +148,19 @@ body {
 #profile-pic {
     border: 3px solid black;
     border-radius: 50%;
-    width: 200px;
+    width: 170px;
 }
 
 #footer {
+    display: flex;
     border-top: 3px solid black;
-    padding: 20px;
+    padding: 2px;
     margin: 0px;
+    justify-content: center;
+}
+
+#feat-photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
